@@ -38,8 +38,16 @@ class FirstScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Center(
-        child: Text('Halo Dunia'),
+      body: Container(
+        child: Text(
+          'Hi',
+          style: TextStyle(fontSize: 40),
+        ),
+        decoration: BoxDecoration(
+          color: Colors.red,
+          border: Border.all(color: Colors.green, width: 3),
+          borderRadius: BorderRadius.circular(10),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
